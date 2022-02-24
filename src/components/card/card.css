@@ -1,0 +1,24 @@
+.cardContainer {
+ display: flex;
+  width: 550px;
+  height: 90px;
+  margin: 38px 40px 30px 150px;
+  padding: 0 10px 0 26px;
+  opacity: 0.8;
+  border-radius: 6px;
+  border: solid 1px #979797;
+  background-color: #fff;
+  place-content: space-between;
+}
+.cardContainer:hover {
+  opacity: 0.5;
+}
+.cardContent {
+  display: grid;
+}
+.cardContent > a {
+  text-decoration:none;
+}
+.cardIcon{
+  place-self: center;
+}

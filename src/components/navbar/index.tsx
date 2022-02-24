@@ -1,7 +1,8 @@
 import React from "react";
+import "./navbar.css";
 
 const navbar = () => {
-  return <div>navbar</div>;
+  return <header><span>HACKER NEWS</span></header>;
 };
 
 export default navbar;
