@@ -15,15 +15,15 @@ const HeartFill: React.FC<{ cls?: string }> = ({ cls }) => (
     <g
       id="Page-1"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g
         id="Front-End-Test---Home-view"
         transform="translate(-654.000000, -383.000000)"
         fill="#DD0031"
-        fill-rule="nonzero"
+        fillRule="nonzero"
       >
         <g id="News" transform="translate(150.000000, 348.000000)">
           <g
