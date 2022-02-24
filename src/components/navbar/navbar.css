@@ -9,10 +9,10 @@ header {
 
 
 }
-span {
-  width: 208px;
-  height: 28px;
-  object-fit: contain;
+header > p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
   font-family: Baskerville;
   font-size: 28px;
   font-weight: normal;

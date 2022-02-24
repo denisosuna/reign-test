@@ -1,0 +1,25 @@
+.ButtonMain {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  outline: none;
+  width: 98px;
+  height: 31px;
+  padding: 3px 16px 0 17px;
+  border-radius: 2px;
+  cursor: pointer;
+  
+}
+.ButtonNormal {
+  color: #606060;
+  border: solid 1px #d6d6d6;
+}
+
+.ButtonActive {
+  color: #1797ff;
+  border: solid 1px #1797ff;
+}
