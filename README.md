@@ -151,8 +151,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### Learn More
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Collaborators
@@ -191,13 +189,10 @@ Feel free to fork this project and improve it!
 
 [contributors-shield]: https://img.shields.io/github/contributors/denisosuna/reign-test?style=for-the-badge
 [contributors-url]: https://github.com/denisosuna/reign-test/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/denisosuna/reign-test?style=for-the-badge 
 [forks-url]: https://github.com/Azordev/frontend-template/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/denisosuna/reign-test?style=for-the-badge
 [stars-url]: https://github.com/denisosuna/reign-test/stargazers
-
 [issues-open-shield]: https://img.shields.io/github/issues/denisosuna/reign-test?style=for-the-badge
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/denisosuna/reign-test?style=for-the-badge
 [javascript]: https://img.shields.io/badge/JAVASCRIPT-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript
