@@ -7,15 +7,16 @@ const initial_data = {
   hitsPerPage: 0,
   nbHits: 0,
   nbPages: 0,
-  page: INITIAL_PAGE,
+  page: 0,
 };
 
-export function UseNews({ keyword } = { keyword: null }) {
+export function UseNews( keyword: string ) {
   const [News, setNews] = useState<fetchData>(initial_data);
+  
   const [loading, setLoading] = useState(false);
   const [loadingNextPage, setLoadingNextPage] = useState(false);
   const [page, setPage] = useState(INITIAL_PAGE);
-  let keywordToUSe = keyword || localStorage.lastKeyword || "react";
+  let keywordToUSe = keyword || localStorage.lastKeyword || "angular";
 
   useEffect(() => {
     setLoading(true);

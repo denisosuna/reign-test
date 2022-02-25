@@ -13,3 +13,8 @@ export type fetchData = {
   nbPages: number;
   page: number;
 };
+
+export type InitialFetchData = {
+  news:fetchData;
+  
+};

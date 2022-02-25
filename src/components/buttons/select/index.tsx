@@ -1,11 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./select.css";
-
-type ButtonProps = {
-  onChangeHandler?: (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => void;
-};
 
 const selectOptions = [
   {
@@ -25,16 +19,17 @@ const selectOptions = [
   },
 ];
 
-const Select: React.FC<ButtonProps> = ({ onChangeHandler }: ButtonProps) => {
+const Select: React.FC<{ keyWord: string ; setKeyWord: any }> = ({
+  keyWord = "angular",
+  setKeyWord,
+}) => {
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setValue(event.target.value);
+    setKeyWord(event.target.value);
   };
-
-  const [value, setValue] = useState("angular");
 
   return (
     <div className="selectContainer">
-      <select value={value} onChange={(e) => handleChange(e)}>
+      <select value={keyWord} onChange={(e) => handleChange(e)}>
         {selectOptions.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}

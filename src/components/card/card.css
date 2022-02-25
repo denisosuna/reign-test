@@ -18,13 +18,18 @@
   align-self: normal;
 }
 
-.cardIcon {
+.cardIconContainer {
   place-self: center;
   height: 100%;
   display: grid;
   align-items: center;
   padding: 0 20px;
   background-color: #60606036;
+
+}
+.cardIconContainer svg {
+  cursor: pointer;
+
 }
 
 .newsHeader {
