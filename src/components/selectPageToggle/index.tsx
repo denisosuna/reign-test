@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import PrimaryButton from "../buttons/selectViewButton";
+import PrimaryButton from "../buttons/ViewButton";
 import "./selectPageToggle.css";
 
 const PageToggle = () => {

@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
+import { fetchData } from "../constants/types/news.type";
 import { getNews } from "../services/hackerNews";
-
 const INITIAL_PAGE = 0;
+const initial_data = {
+  hits: [],
+  hitsPerPage: 0,
+  nbHits: 0,
+  nbPages: 0,
+  page: INITIAL_PAGE,
+};
 
 export function UseNews({ keyword } = { keyword: null }) {
-  const [ News, setNews ] = useState([]);
+  const [News, setNews] = useState<fetchData>(initial_data);
   const [loading, setLoading] = useState(false);
   const [loadingNextPage, setLoadingNextPage] = useState(false);
   const [page, setPage] = useState(INITIAL_PAGE);
@@ -12,7 +19,6 @@ export function UseNews({ keyword } = { keyword: null }) {
 
   useEffect(() => {
     setLoading(true);
-    //Recuperamos la keyword del localStorage
     getNews({ keyword: keywordToUSe }).then((news) => {
       setNews(news);
       setLoading(false);
@@ -23,8 +29,8 @@ export function UseNews({ keyword } = { keyword: null }) {
   useEffect(() => {
     if (page !== INITIAL_PAGE) {
       setLoadingNextPage(true);
-      getNews({ keyword: keywordToUSe, page }).then((news) => {
-        setNews((prevNews) => prevNews.concat(news));
+      getNews({ keyword: keywordToUSe, page }).then((NewNews) => {
+        setNews(NewNews);
         setLoadingNextPage(false);
         localStorage.lastKeyword = keywordToUSe;
       });

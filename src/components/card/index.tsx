@@ -1,15 +1,10 @@
 import * as React from "react";
+import { newsTypes } from "../../constants/types/news.type";
 import HeartFill from "../icons/heart/HeartFill";
 import WatchIcon from "../icons/WatchIcon";
 import "./card.css";
-interface CardProps {
-  author: string;
-  story_title: string;
-  story_url: string;
-  created_at: string;
-}
 
-const Card: React.FC<CardProps> = ({
+const Card: React.FC<newsTypes> = ({
   author,
   story_title,
   story_url,
@@ -17,15 +12,20 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="cardContainer">
-      <div className="cardContent">
-        <a href={story_url} target="_blank" rel="noreferrer">
-          <p>
-            <WatchIcon /> {created_at} By {author}
-          </p>
-          <p>{story_title}</p>
-        </a>
+      <a
+        className="cardContent"
+        href={story_url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <p className="newsHeader">
+          <WatchIcon /> {created_at} By {author}
+        </p>
+        <p className="newstitle">{story_title}</p>
+      </a>
+      <div className="cardIcon">
+        <HeartFill />
       </div>
-      <div className="cardIcon"><HeartFill/></div>
     </div>
   );
 };

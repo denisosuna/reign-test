@@ -1,15 +1,20 @@
 import React from "react";
-import Card from "../../components/card";
+import Select from "../../components/buttons/select";
+import CardContainer from "../../components/cardContainer";
 import PageToggle from "../../components/selectPageToggle";
 import { UseNews } from "../../hooks/useNews";
 import "./home.css";
 
 const home = () => {
   const {News}=UseNews();
-  console.log(News);
+
+  const {hits,page,nbPages,hitsPerPage}=News;
+
+  console.log(hits);
   return <div className="main">
     <PageToggle />
-    <Card author="author" story_title="story_title" story_url="story_url" created_at="created_at" />
+    <Select/>
+    <CardContainer data={hits} />
     
     
     </div>;

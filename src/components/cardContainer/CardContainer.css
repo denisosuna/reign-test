@@ -1,0 +1,22 @@
+.cardGridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  grid-auto-rows: 100px;
+  padding: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .cardGridContainer {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .cardGridContainer {
+    
+    padding: 1.5rem;
+  }
+}

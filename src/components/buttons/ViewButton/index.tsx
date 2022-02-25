@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./selectViewButton.css";
+import "./ViewButton.css";
 
 type ButtonProps = {
   buttonText: string;

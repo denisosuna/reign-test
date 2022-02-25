@@ -1,0 +1,36 @@
+.selectContainer{
+  display: flex;
+  padding: 10px;
+  width: 100%;
+
+}
+
+select {
+  margin-bottom: 16px;
+  max-width: 10rem;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.08);
+  line-height: 40px;
+  margin-right: 14px;
+  padding-right: 40px;
+  vertical-align: top;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid grey;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  font-size: inherit;
+  font-weight: 400;
+  outline: 0;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  appearance: none;
+  padding-right: 24px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxLjE3MjcgMTIuMzg2NEwxNS45OTkzIDE3LjU1OThMMTAuODI2IDEyLjM4NjRDMTAuNzAyNiAxMi4yNjMgMTAuNTU2IDEyLjE2NTEgMTAuMzk0NyAxMi4wOTgzQzEwLjIzMzQgMTIuMDMxNSAxMC4wNjA2IDExLjk5NzEgOS44ODYgMTEuOTk3MUM5LjcxMTQzIDExLjk5NzEgOS41Mzg1NiAxMi4wMzE1IDkuMzc3MjggMTIuMDk4M0M5LjIxNTk5IDEyLjE2NTEgOS4wNjk0NCAxMi4yNjMgOC45NDYgMTIuMzg2NEM4LjgyMjU2IDEyLjUwOTkgOC43MjQ2NCAxMi42NTY0IDguNjU3ODMgMTIuODE3N0M4LjU5MTAzIDEyLjk3OSA4LjU1NjY0IDEzLjE1MTkgOC41NTY2NCAxMy4zMjY0QzguNTU2NjQgMTMuNTAxIDguNTkxMDMgMTMuNjczOSA4LjY1NzgzIDEzLjgzNTJDOC43MjQ2NCAxMy45OTY0IDguODIyNTYgMTQuMTQzIDguOTQ2IDE0LjI2NjRMMTUuMDY2IDIwLjM4NjRDMTUuNTg2IDIwLjkwNjQgMTYuNDI2IDIwLjkwNjQgMTYuOTQ2IDIwLjM4NjRMMjMuMDY2IDE0LjI2NjRDMjMuMTg5NiAxNC4xNDMxIDIzLjI4NzcgMTMuOTk2NiAyMy4zNTQ2IDEzLjgzNTNDMjMuNDIxNSAxMy42NzQgMjMuNDU1OSAxMy41MDExIDIzLjQ1NTkgMTMuMzI2NEMyMy40NTU5IDEzLjE1MTggMjMuNDIxNSAxMi45Nzg5IDIzLjM1NDYgMTIuODE3NkMyMy4yODc3IDEyLjY1NjMgMjMuMTg5NiAxMi41MDk4IDIzLjA2NiAxMi4zODY0QzIyLjU0NiAxMS44Nzk4IDIxLjY5MjcgMTEuODY2NCAyMS4xNzI3IDEyLjM4NjRWMTIuMzg2NFoiIGZpbGw9IiMzMzMzMzMiLz4KPC9zdmc+Cg==")
+    98% 50% no-repeat white;
+  background-size: 24px;
+
+}
