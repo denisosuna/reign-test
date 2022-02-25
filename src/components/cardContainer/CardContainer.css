@@ -3,13 +3,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   grid-auto-rows: 100px;
-  padding: 8rem;
+  padding:0 8rem;
+  min-height: 45rem;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 768px) {
   .cardGridContainer {
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
     padding: 0.5rem;
+    min-height: 55rem;
+
   }
 }
 
@@ -17,6 +21,6 @@
 @media screen and (max-width: 1024px) {
   .cardGridContainer {
     
-    padding: 1.5rem;
+    padding: 0 1.5rem;
   }
 }

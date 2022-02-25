@@ -14,29 +14,18 @@ export function UseNews( keyword: string ) {
   const [News, setNews] = useState<fetchData>(initial_data);
   
   const [loading, setLoading] = useState(false);
-  const [loadingNextPage, setLoadingNextPage] = useState(false);
   const [page, setPage] = useState(INITIAL_PAGE);
   let keywordToUSe = keyword || localStorage.lastKeyword || "angular";
 
   useEffect(() => {
     setLoading(true);
-    getNews({ keyword: keywordToUSe }).then((news) => {
+    getNews({ keyword: keywordToUSe, page }).then((news) => {
       setNews(news);
       setLoading(false);
       localStorage.lastKeyword = keywordToUSe;
     });
-  }, [keyword, keywordToUSe, setNews]);
+  }, [keyword,page, keywordToUSe, setNews]);
 
-  useEffect(() => {
-    if (page !== INITIAL_PAGE) {
-      setLoadingNextPage(true);
-      getNews({ keyword: keywordToUSe, page }).then((NewNews) => {
-        setNews(NewNews);
-        setLoadingNextPage(false);
-        localStorage.lastKeyword = keywordToUSe;
-      });
-    }
-  }, [keyword, page, keywordToUSe, setNews]);
 
-  return { loading, loadingNextPage, News, setPage, page };
+  return { loading,  News, setPage, page };
 }

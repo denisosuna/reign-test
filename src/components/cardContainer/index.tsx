@@ -13,12 +13,13 @@ const CardContainer: React.FC<{
   const dataByView: newsTypes[] = currentView ? newsData : favoriteNews;
 
   const cards = dataByView.map(
-    ({ author, story_title, story_url, created_at }) =>
+    ({ author, story_title, story_url, created_at },index) =>
       author &&
       story_title &&
       story_url &&
       created_at && (
         <Card
+          key={story_url+index}
           author={author}
           story_title={story_title}
           story_url={story_url}
